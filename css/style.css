@@ -1,0 +1,226 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:50px;
+}
+/* smooth scrolling */
+html{
+    scroll-behavior: smooth ;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+/* Navigation Bar :LOgo and Image */
+#logo{
+    margin:15px 20px;
+}
+#logo img{
+    height: 70px;
+    margin: 15px 18px;
+}
+/* Navigation Bar:List styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 4px;
+    border-radius: 10px;
+    color: rgb(247, 247, 247);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    margin: 2px 12px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+} 
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 435px;
+}
+#home::before{
+    content: "";
+    background: url('../bg3.jfif') no-repeat center center/cover;   /*--> agr apka css folder mei hei tab kyunki, ek folder ke bahar aana hei, islieye double dot */
+    position: absolute;
+    height: 76%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    color: white;
+    text-align: center ;
+    font-family: 'Bree Serif', serif;
+}
+#home button:hover{
+    background-color: black;
+    color: rgb(11, 228, 3);
+
+}
+/* services section */
+#services{
+    margin: 16px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid rgb(2, 1, 1);
+    padding: 6px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: #cecaca;
+}
+#services .box img{
+    height: 128px;
+    display: block;
+    margin: auto;
+}
+#services-container::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center / cover;
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    z-index: -1;
+    opacity: 0.68;
+}
+#services-container h1{
+    background-color: white;
+    border-radius: 15px;
+    display: block;
+    width: 300px;
+    margin: auto;
+
+}
+
+/* Clients section */
+#client-section{
+    height: 399px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 53%;
+    z-index: -1;
+    opacity: 1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item img{
+    width: 108px;
+    height: 100px;
+}
+.client-item{
+    padding: 34px;
+
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    background: url('../contact.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:10px;
+    font-size:1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/* footer  */
+footer{
+    background: black;
+    color: white;
+    padding: 20px 40px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    padding: 10px;
+}
+#home p{
+    display: flex;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    color:white;
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid white;
+    background: brown;
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
